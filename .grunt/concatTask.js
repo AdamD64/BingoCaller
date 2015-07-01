@@ -3,7 +3,8 @@ module.exports = {
 
         src: [
 
-            'main-app/app/scripts/*.js',
+            'main-app/app/scripts/modules.js',
+            'main-app/app/scripts/controller.js',
             'main-app/app/scripts/directives/*.js',
             'main-app/app/scripts/services/*.js'
         ],

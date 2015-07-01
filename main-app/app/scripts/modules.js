@@ -1,2 +1,3 @@
 
-angular.module('tombola.BingoCaller', []);
+angular.module('tombola.bingoCaller',
+    []);
