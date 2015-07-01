@@ -22,13 +22,6 @@ module.exports =  {
         expand: true
     },
 
-    services: {
-        cwd: '',
-        src: 'main-app/app/scripts/services',
-        dest: '.build/',
-        expand: true
-    },
-
     options: {
 
         quotmark: 'single'
