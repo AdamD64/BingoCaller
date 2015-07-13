@@ -4,6 +4,5 @@
         .service('numberGen', function () {
 
             console.log('foo');
-
         });
 })();

@@ -1,8 +1,9 @@
-
 (function () {
     'use strict';
     angular.module('tombola.bingoCaller')
-        .controller('bingoCallerController',  function () {
+        .controller('bingoCallerController', ['numberGen', function (numberGen) {
 
-        });
+
+
+        }]);
 })();
