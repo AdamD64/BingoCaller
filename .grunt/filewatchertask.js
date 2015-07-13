@@ -57,6 +57,14 @@ module.exports = {
         }
     },
 
+    services: {
+        files: 'main-app/app/scripts/services/*.js',
+        tasks: ['jshint', 'clean:scripts', 'concat:scripts'],
+        options: {
+            spawn: false
+        }
+    },
+
     directives: {
         files: 'main-app/app/scripts/directives/*.js',
         tasks: ['jshint'],
