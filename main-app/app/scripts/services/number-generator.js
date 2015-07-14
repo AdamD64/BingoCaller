@@ -3,7 +3,11 @@
     angular.module('Tombola.BingoCaller.NumberGen')
         .service('NumberGen', function () {
 
-            var numbers = [1,2,3,4,5,6,7,8,9,10,11,12,13,14,15,16,17,18,19,20,21,22,23,24,25,26,27,28,29,30];
+//            var numbers = [1,2,3,4,5,6,7,8,9,10,11,12,13,14,15,16,17,18,19,20,21,22,23,24,25,26,27,28,29,30];
+//            var numbers30 = [1,2,3,4,5,6,7,8,9,10,11,12,13,14,15,16,17,18,19,20,21,22,23,24,25,26,27,28,29,30];
+//            numbers.push.apply(numbers,numbers30);
+//            console.log(numbers);
+
 //            var min = 1,
 //                max = 10;
 
@@ -15,7 +19,7 @@
 //
 //            getRandom();
 
-            function shuffle(o) {
+            this.shuffle = function(o) {
                 var j, x, i = o.length;
                 while (i) {
                     j = parseInt(Math.random() * i);
@@ -25,9 +29,6 @@
                         o[j] = x;
                 }
                 return o;
-            }
-
-            console.log(shuffle(numbers));
-
+            };
         });
 })();

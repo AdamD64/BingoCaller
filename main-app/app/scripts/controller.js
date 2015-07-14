@@ -4,10 +4,14 @@
         .controller('bingoCallerController', ['$scope','NumberGen', 'ArraySplice', function ($scope, NumberGen, ArraySplice) {
 
             $scope.ArraySplice = ArraySplice;
+            $scope.NumberGen = NumberGen;
 
-            $scope.spliceArray = function () {
-                $scope.ArraySplice.spliceArray();
+            $scope.createArray = function () {
+                $scope.ArraySplice.createArray();
             };
 
+            $scope.shuffleArray = function () {
+                $scope.ArraySplice.shuffleArray();
+            };
         }]);
 })();
