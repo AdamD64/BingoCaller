@@ -1,3 +1,3 @@
-angular.module('tombola.bingoCaller.numberGen',[]);
-angular.module('tombola.bingoCaller',
-    ['tombola.bingoCaller.numberGen']);
+angular.module('Tombola.BingoCaller.NumberGen',[]);
+angular.module('Tombola.BingoCaller',
+    ['Tombola.BingoCaller.NumberGen']);
