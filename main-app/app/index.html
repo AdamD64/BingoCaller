@@ -8,11 +8,13 @@
 <body ng-controller="bingoCallerController">
 <h1>BingoCaller!</h1>
 
+<form>
+    <input type="text" id="arrayLength" name="customArray"/>
+</form>
+
 <div>
-    <button ng-click="createArray30()">30</button>
-    <button ng-click="createArray50()">50</button>
-    <button ng-click="createArray75()">75</button>
-    <button ng-click="shuffleArray()">shuffle</button>
+    <button ng-click="createCustomArray()">Create Array</button>
+    <button ng-click="shuffleArray()">Shuffle</button>
     <button ng-click="resetArray()">Reset</button>
 </div>
 

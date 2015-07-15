@@ -6,14 +6,8 @@
             $scope.ArraySplice = ArraySplice;
             $scope.NumberGen = NumberGen;
 
-            $scope.createArray30 = function () {
-                $scope.ArraySplice.createArray30();
-            };
-            $scope.createArray50 = function () {
-                $scope.ArraySplice.createArray50();
-            };
-            $scope.createArray75 = function () {
-                $scope.ArraySplice.createArray75();
+            $scope.createCustomArray = function () {
+                $scope.ArraySplice.createCustomArray();
             };
             $scope.shuffleArray = function () {
                 $scope.ArraySplice.shuffleArray();
