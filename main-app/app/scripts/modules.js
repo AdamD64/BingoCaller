@@ -1,6 +1,5 @@
-angular.module('Tombola.BingoCaller.NumberGen', []);
-angular.module('Tombola.BingoCaller.ArraySplice', []);
-
+angular.module('Tombola.BingoCaller.NumberGenerator', []);
+angular.module('Tombola.BingoCaller.ArrayCreator', []);
 angular.module('Tombola.BingoCaller',
-    ['Tombola.BingoCaller.NumberGen',
-        'Tombola.BingoCaller.ArraySplice']);
+    ['Tombola.BingoCaller.NumberGenerator',
+     'Tombola.BingoCaller.ArrayCreator']);

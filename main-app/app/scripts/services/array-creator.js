@@ -1,29 +1,25 @@
 (function () {
     'use strict';
-    angular.module('Tombola.BingoCaller.ArraySplice')
-        .service('ArraySplice', [ 'NumberGen', function (NumberGen) {
+    angular.module('Tombola.BingoCaller.ArrayCreator')
+        .service('ArrayCreator', [ 'NumberGenerator', function (numberGenerator) {
 
             var numbers = [];
-            console.log(numbers);
 
             this.resetArray = function () {
-                this.reset = numbers.splice(0, numbers.length);
-                console.log(numbers);
+                numbers = [];
             };
 
             this.createCustomArray = function () {
-                var customArray = [];
+                this.resetArray();
                 var arrayLength = document.getElementById('arrayLength').value;
-
                 for (var i = 0; i < arrayLength; i++) {
-                    customArray[i] = i + 1;
+                    numbers.push( i + 1 );
                 }
-                numbers.push.apply(numbers, customArray);
                 console.log(numbers);
             };
 
             this.shuffleArray = function () {
-                NumberGen.shuffle(numbers);
+                numbers = numberGenerator.shuffle(numbers);
                 console.log(numbers);
             };
         }]);

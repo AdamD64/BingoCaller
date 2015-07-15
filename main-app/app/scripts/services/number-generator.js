@@ -1,7 +1,7 @@
 (function () {
     'use strict';
-    angular.module('Tombola.BingoCaller.NumberGen')
-        .service('NumberGen', function () {
+    angular.module('Tombola.BingoCaller.NumberGenerator')
+        .service('NumberGenerator', function () {
 
             this.shuffle = function (o) {
                 var j, x, i = o.length;
