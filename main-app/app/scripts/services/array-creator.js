@@ -2,7 +2,6 @@
     'use strict';
     angular.module('Tombola.BingoCaller.ArrayCreator')
         .service('ArrayCreator', function () {
-
             var numbers = [];
 
             this.resetArray = function () {
@@ -22,7 +21,6 @@
                 numbers.sort(function () {
                     return Math.round(Math.random()) - 0.5;
                 });
-
                 console.log(numbers);
             };
         });
