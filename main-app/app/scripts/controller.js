@@ -2,19 +2,15 @@
     'use strict';
     angular.module('Tombola.BingoCaller')
         .controller('bingoCallerController',
-        ['$scope', 'NumberGen', 'ArraySplice', function ($scope, NumberGen, ArraySplice) {
+        ['$scope','ArrayCreator', function ($scope, arraycreator) {
 
-            $scope.ArraySplice = ArraySplice;
-            $scope.NumberGen = NumberGen;
+            $scope.ArrayCreator = arraycreator;
 
             $scope.createCustomArray = function () {
-                $scope.ArraySplice.createCustomArray();
+                $scope.ArrayCreator.createCustomArray();
             };
             $scope.shuffleArray = function () {
-                $scope.ArraySplice.shuffleArray();
-            };
-            $scope.resetArray = function () {
-                $scope.ArraySplice.resetArray();
+                $scope.ArrayCreator.shuffleArray();
             };
         }]);
 })();
