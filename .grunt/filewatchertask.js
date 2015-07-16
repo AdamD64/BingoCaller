@@ -3,7 +3,7 @@
     module.exports = {
         html: {
             files: 'main-app/app/index.html',
-            tasks: ['clean:html', 'copy:html'],
+            tasks: ['nostart'],
             options: {
                 spawn: false
             }
@@ -16,14 +16,14 @@
             }
         },
         grunt: {
-            files: '.grunt/*.js',
-            tasks: ['jshint'],
+            files: '.grunt/*.*',
+            tasks: ['nostart'],
             options: {
                 spawn: false
             }
         },
         unitTests: {
-            files: './main-app/tests/**/*.js',
+            files: './main-app/tests/**/*.*',
             tasks: ['nostart'],
             options: {
                 spawn: false
@@ -31,35 +31,35 @@
         },
         images: {
             files: 'main-app/app/images/*.*',
-            tasks: ['clean:images', 'copy:images'],
+            tasks: ['nostart'],
             options: {
                 spawn: false
             }
         },
         less: {
             files: 'main-app/app/less/*.*',
-            tasks: ['clean:css', 'less'],
+            tasks: ['nostart'],
             options: {
                 spawn: false
             }
         },
         scripts: {
-            files: 'main-app/app/scripts/*.js',
-            tasks: ['jshint', 'clean:scripts', 'concat:scripts'],
+            files: 'main-app/app/scripts/*.*',
+            tasks: ['nostart'],
             options: {
                 spawn: false
             }
         },
         services: {
-            files: 'main-app/app/scripts/services/*.js',
-            tasks: ['jshint', 'clean:scripts', 'concat:scripts'],
+            files: 'main-app/app/scripts/services/*.*',
+            tasks: ['nostart'],
             options: {
                 spawn: false
             }
         },
         directives: {
-            files: 'main-app/app/scripts/directives/*.js',
-            tasks: ['jshint'],
+            files: 'main-app/app/scripts/directives/*.*',
+            tasks: ['nostart'],
             options: {
                 spawn: false
             }
