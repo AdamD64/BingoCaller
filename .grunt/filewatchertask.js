@@ -24,7 +24,7 @@
         },
         unitTests: {
             files: './main-app/tests/**/*.js',
-            tasks: ['jshint'],
+            tasks: ['nostart'],
             options: {
                 spawn: false
             }
