@@ -9,7 +9,7 @@
         },
         angular: {
             cwd: '',
-            src: 'angular/*',
+            src: 'bower_components/angular/*',
             dest: '.build/main-app/app',
             expand: true
         },
