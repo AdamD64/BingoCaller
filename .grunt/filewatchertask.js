@@ -3,63 +3,63 @@
     module.exports = {
         html: {
             files: 'main-app/app/index.html',
-            tasks: ['nostart'],
+            tasks: ['default'],
             options: {
                 spawn: false
             }
         },
         angular: {
             files: 'angular/*',
-            tasks: ['nostart'],
+            tasks: ['default'],
             options: {
                 spawn: false
             }
         },
         grunt: {
             files: '.grunt/*.*',
-            tasks: ['nostart'],
+            tasks: ['default'],
             options: {
                 spawn: false
             }
         },
         unitTests: {
             files: './main-app/tests/**/*.*',
-            tasks: ['nostart'],
+            tasks: ['default'],
             options: {
                 spawn: false
             }
         },
         images: {
             files: 'main-app/app/images/*.*',
-            tasks: ['nostart'],
+            tasks: ['default'],
             options: {
                 spawn: false
             }
         },
         less: {
             files: 'main-app/app/less/*.*',
-            tasks: ['nostart'],
+            tasks: ['default'],
             options: {
                 spawn: false
             }
         },
         scripts: {
             files: 'main-app/app/scripts/*.*',
-            tasks: ['nostart'],
+            tasks: ['default'],
             options: {
                 spawn: false
             }
         },
         services: {
             files: 'main-app/app/scripts/services/*.*',
-            tasks: ['nostart'],
+            tasks: ['default'],
             options: {
                 spawn: false
             }
         },
         directives: {
             files: 'main-app/app/scripts/directives/*.*',
-            tasks: ['nostart'],
+            tasks: ['default'],
             options: {
                 spawn: false
             }
