@@ -3,63 +3,63 @@
     module.exports = {
         html: {
             files: 'main-app/app/index.html',
-            tasks: ['clean:html', 'copy:html'],
+            tasks: ['default'],
             options: {
                 spawn: false
             }
         },
         angular: {
             files: 'angular/*',
-            tasks: ['nostart'],
+            tasks: ['default'],
             options: {
                 spawn: false
             }
         },
         grunt: {
-            files: '.grunt/*.js',
-            tasks: ['jshint'],
+            files: '.grunt/*.*',
+            tasks: ['default'],
             options: {
                 spawn: false
             }
         },
         unitTests: {
-            files: './main-app/tests/**/*.js',
-            tasks: ['jshint'],
+            files: './main-app/tests/**/*.*',
+            tasks: ['default'],
             options: {
                 spawn: false
             }
         },
         images: {
             files: 'main-app/app/images/*.*',
-            tasks: ['clean:images', 'copy:images'],
+            tasks: ['default'],
             options: {
                 spawn: false
             }
         },
         less: {
             files: 'main-app/app/less/*.*',
-            tasks: ['clean:css', 'less'],
+            tasks: ['default'],
             options: {
                 spawn: false
             }
         },
         scripts: {
-            files: 'main-app/app/scripts/*.js',
-            tasks: ['jshint', 'clean:scripts', 'concat:scripts'],
+            files: 'main-app/app/scripts/*.*',
+            tasks: ['default'],
             options: {
                 spawn: false
             }
         },
         services: {
-            files: 'main-app/app/scripts/services/*.js',
-            tasks: ['jshint', 'clean:scripts', 'concat:scripts'],
+            files: 'main-app/app/scripts/services/*.*',
+            tasks: ['default'],
             options: {
                 spawn: false
             }
         },
         directives: {
-            files: 'main-app/app/scripts/directives/*.js',
-            tasks: ['jshint'],
+            files: 'main-app/app/scripts/directives/*.*',
+            tasks: ['default'],
             options: {
                 spawn: false
             }
