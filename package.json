@@ -10,7 +10,7 @@
     "grunt-contrib-watch": "~0.6.1",
     "grunt-include-replace": "~3.0.0",
     "karma": "~0.12.31",
-    "grunt-karma": "~0.10.1",
+    "grunt-karma": "~0.12.0",
     "grunt-lesslint": "~1.1.14",
     "mocha": "~2.2.4",
     "grunt-mocha-test": "~0.12.7",
