@@ -7,21 +7,23 @@
 </head>
 
 <body ng-controller="bingoCallerController">
-<h1>BingoCaller!</h1>
-
-<form>
-    <input type="number" id="arrayLength"/>
-</form>
-
-<div>
-    <button ng-click="createCustomArray()">Create Array</button>
-    <button ng-click="shuffleArray()">Shuffle</button>
+<div id="contentContainer">
+    <header>
+        <h1>BingoCaller!</h1>
+    </header>
+    <main>
+        <form>
+            <input type="number" id="arrayLength"/>
+        </form>
+        <div>
+            <button ng-click="createCustomArray()">Create Array</button>
+            <button ng-click="shuffleArray()">Shuffle</button>
+        </div>
+        <div>
+            <p id="arrayDisplay"></p>
+        </div>
+    </main>
 </div>
-<div>
-    <p id="arrayDisplay"></p>
-</div>
-
-
 <script src="scripts/built.js"></script>
 </body>
 </html>
